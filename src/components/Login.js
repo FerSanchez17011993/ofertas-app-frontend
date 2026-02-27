@@ -14,7 +14,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   // URL de la imagen de fondo
-  const imagenFondo = "https://res.cloudinary.com/dwpgncjgn/image/upload/v1771939326/Home_kwrrd2.png";
+  const imagenFondo = "https://res.cloudinary.com/dwpgncjgn/image/upload/v1772202456/Home_kwrrd2.png";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

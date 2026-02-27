@@ -6,12 +6,10 @@ const Home = ({ isLoggedIn, userRole }) => {
   const [busqueda, setBusqueda] = useState('');
   const navigate = useNavigate();
 
-  const imagenHome = "https://res.cloudinary.com/dwpgncjgn/image/upload/v1771939326/Home_kwrrd2.png";
+  const imagenHome = "https://res.cloudinary.com/dwpgncjgn/image/upload/v1772202456/Home_kwrrd2.png";
 
   const ejecutarBusqueda = () => {
     if (!busqueda.trim()) return;
-
-    // Guardamos la intención de búsqueda en la nube local (localStorage)
     localStorage.setItem('termino-busqueda-home', busqueda);
 
     if (isLoggedIn) {
