@@ -44,7 +44,6 @@ export const CartProvider = ({ children }) => {
     const removeFromCart = (id) => setCart((prevCart) => prevCart.filter((item) => item._id !== id));
     const clearCart = () => setCart([]);
 
-    // --- CÁLCULOS (Usando precioNuevo en minúscula) ---
     const totalItems = cart.reduce((acc, item) => acc + item.cantidad, 0);
     const totalPrice = cart.reduce((acc, item) => acc + (item.precioNuevo * item.cantidad), 0);
 
